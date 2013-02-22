@@ -1,0 +1,210 @@
+@import compass
+@import compass/reset
+
+$default-font: "Trebuchet MS", Helvetica, sans-serif
+$content-width: 950px
+
+#wrap
+  clear: both
+  background: rgba( 239, 239, 239, 0.5 )
+  border-top: 1px solid rgba( 38, 38, 38, 0.1 )
+  border-bottom: 1px solid rgba( 38, 38, 38, 0.1 )
+
+#header
+  +clearfix
+  width: $content-width
+  margin: 0 auto
+  padding: 10px 0 0
+
+
+#logo
+  +float-left
+  +hide-text
+  background: url( "/img/logo.png" ) no-repeat
+  display: block
+  height: 98px
+  width: 148px
+
+#login-hint
+  +float-right
+  color: rgba( 38, 38, 38, 0.8 )
+  font-family: $default-font
+  font-size: 8px
+  padding: 50px 0 0
+
+#link-create-account
+  color: rgba( 70, 166, 212, 0.7 )
+  text-decoration: none
+
+#link-login
+  color: rgba( 70, 166, 212, 0.7 )
+  text-decoration: none
+
+#content
+  clear: both
+  width: $content-width
+  margin: 0 auto
+
+#link-customize-my-page
+  +hide-text
+  background: url( "/img/custom-page.png" ) no-repeat
+  display: block
+  height: 26px
+  width: 159px
+
+#welcome-messages
+  padding: 40px 0 20px
+
+#welcome-title
+  font-family: Arial
+  font-size: 58px
+
+#welcome-subtitle
+  color: rgba( 38, 38, 38, 0.8 )
+  font-size: 32px
+  padding: 10px 0
+
+#intro
+  color: gray
+  font-size: 21px
+  padding: 10px 0
+
+#link-start
+  color: #3085cc
+  text-decoration: none
+
+#link-screencast
+  color: #3085cc
+  text-decoration: none
+
+#button-dismiss-welcome-message
+  +float-right
+  color: rgba( 38, 38, 38, 0.6 )
+  font-family: $default-font
+  font-size: 8px
+  text-decoration: none
+
+.button-close
+  color: rgba( 38, 38, 38, 0.3 )
+  font-family: $default-font
+  font-size: 20px
+  position: relative
+  top: 2px
+
+#news-divider
+  background: url( "/img/welcome-master.png" ) repeat
+  border: 0
+  height: 8px
+  width: 100%
+
+#whats-new
+  +clearfix
+  padding: 10px 0 60px
+
+.list-title
+  +clearfix
+  border-bottom: 1px solid rgba( 38, 38, 38, 0.1 )
+  font-size: 16px
+  font-weight: bold
+  padding: 7px 0
+
+.list-title h3
+  +float-left
+
+.button-list-customize
+  +float-right
+  background: url( "/img/main-title-bg.png" ) no-repeat
+  display: block
+  height: 16px
+  width: 22px
+
+.list-item
+  border-bottom: 1px solid rgba( 38, 38, 38, 0.1 )
+  clear: both
+  color: rgba( 38, 38, 38, 0.7 )
+  font-size: 6px
+  line-height: 14px
+  padding: 8px 0
+
+#headlines
+  +float
+  width: 300px
+  padding: 0 25px 0 0
+
+#headlines-title
+  +float-left
+
+#popular
+  +float
+  padding: 0 25px 0 0
+  width: 300px
+
+#latest-images
+  +float
+  width: 300px
+
+#latest-image-grid
+  padding: 3px 0 0
+
+.list-image
+  padding: 1px
+
+#footer
+  +clearfix
+  clear: both
+  width: $content-width
+  padding: 20px 0 20px
+  margin: 0 auto
+
+.footer-block
+  +float
+
+#footer-sources-and-articles
+  width: 310px
+
+#footer-mor-guzzle
+  width: 310px
+  padding: 0 0 0 20px
+
+#footer-about-guzzle
+  padding: 0 0 0 10px
+
+.footer-block-title
+  color: rgba( 38, 38, 38, 0.9 )
+  font-size: 14px
+  font-weight: bold
+  padding: 15px 0
+
+.footer-block-item
+  color: rgba( 38, 38, 38, 0.7 )
+  display: block
+  font-size: 6px
+  text-decoration: none
+  padding: 3px 0
+
+#copyright
+  +float-left
+  clear: both
+  color: rgba( 38, 38, 38, 0.7 )
+  font-size: 6px
+  padding: 30px 0 0
+
+#link-lemonchik
+  color: rgba( 38, 175, 226, 0.7 )
+  text-decoration: none
+
+#link-facebook
+  +float-right
+  background: url(  ) no-repeat
+  color: rgba( 38, 175, 226, 0.7 )
+  display: block
+  font-size: 6px
+  height: 15px
+  padding: 28px 0 0
+  text-decoration: none
+
+#link-facebook > span
+  bottom: 3px
+  position: relative
+  padding: 0 0 0 3px
+

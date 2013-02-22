@@ -1,0 +1,81 @@
+---
+title: Guzzle
+---
+
+<div id="header">
+  <h1><a id="logo" href="#" title="Guzzle Logo">Guzzle</a></h1>
+  <div id="login-hint">This page on any browser?  <a href="#" id="link-create-account" title="Create an account">Create an account</a>, or
+    <a id="link-login" href="#" title="login">Login now</a>
+  </div>
+</div>
+<div id="wrap">
+  <div id="content">
+  	<a id="link-customize-my-page" href="#" title="Customize my page">Customize my page</a>
+    <div id="welcome-messages">
+      <div id="welcome-heading">
+        <h2 id="welcome-title">Welcome.</h2>
+        <div id="welcome-subtitle">Guzzle reads hundreds of feeds every second to get you the latest news about stuff you care about.</div>
+      </div>
+      <div id="intro">
+        <a id="link-start" href="#" title="Start">Click here</a> to start customizing your page now or
+        <a id="link-screencast" href="#" title="Screencast">watch the screencast</a> for a quick intro
+      </div>
+      <a id="button-dismiss-welcome-message" href="#" title="Dismiss welcome message">Don't show this message again <span class="button-close">×</span></a>
+    </div>
+    <hr id="news-divider" />
+    <div id="whats-new">
+      <div id="headlines">
+        <div class="list-title"><h3 id="headlines-title">Headlines</h3><a href="#" class="button-list-customize"></a></div>
+        <div class="list-item">Larry David: This is gonna be a terrible question</div>
+        <div class="list-item">Martin Marks: Tractatus Twitter Philosophicus</div>
+        <div class="list-item">Beverly Cleary At 95: A Talk With The Author Who Created Ramona Quimby</div>
+        <div class="list-item">David Edison Sloane: What Thomas Edison Would Do</div>
+        <div class="list-item">Mike Lux: Does Wall Street Win?</div>
+        <div class="list-item">Jesse Berney: Is Obama Bluffing?</div>
+        <div class="list-item">EPA Unveils New Standards For Coal-Fired Power Plants</div>
+        <div class="list-item">Bristol Palin On 'The View': That's Why It's Called Losing Your Virginity' (VIDEO)</div>
+      </div>
+      <div id="popular">
+        <div class="list-title"><h3 id="popular-title">Popular</h3><a href="#" class="button-list-customize"></a></div>
+        <div class="list-item">EPA Unveils New Standards For Coal-Fired Power Plants</div>
+        <div class="list-item">Food prices head back towards record highs</div>
+        <div class="list-item">Bristol Palin On 'The View': That's Why It's Called Losing Your Virginity' (VIDEO)</div>
+        <div class="list-item">Larry David: This is gonna be a terrible question</div>
+        <div class="list-item">Founding Fathers: The Foundations</div>
+        <div class="list-item">F1: Sutil: Rule changes will help</div>
+        <div class="list-item">News of the World editor Colin Myler: 'an old-fashioned newspaper guy'</div>
+        <div class="list-item">rauschenberg.jpg (JPEG-bilde, 500x499 punkter)</div>
+      </div>
+      <div id="latest-images">
+        <div class="list-title"><h3 id="latest-images-title">Latest Images</h3><a href="#" class="button-list-customize"></a></div>
+        <div id="latest-image-grid">
+          <% 12.times do |num| %>
+          <img class="list-image" src="/img/latest-img-<%= num + 1 %>.jpeg" alt="Image" />
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div id="footer-sources-and-articles" class="footer-block">
+    <div class="footer-block-title">Sources and articles</div>
+    <a href="#" class="footer-block-item" title="Sources">Sources</a>
+    <a href="#" class="footer-block-item" title="Suggest a source">Suggest a source</a>
+    <a href="#" class="footer-block-item" title="All articles">All articles</a>
+    <a href="#" class="footer-block-item" title="Search">Search</a>
+  </div>
+  <div id="footer-mor-guzzle" class="footer-block">
+    <div class="footer-block-title">Mor guzzle</div>
+    <a href="#" class="footer-block-item" title="All the news, by category">All the news, by category</a>
+    <a href="#" class="footer-block-item" title="Guzzle iPhone App">Guzzle iPhone App</a>
+    <a href="#" class="footer-block-item" title="Guzzle en français">Guzzle en français</a>
+  </div>
+  <div id="footer-about-guzzle" class="footer-block">
+    <div class="footer-block-title">About Guzzle</div>
+    <a href="#" class="footer-block-item" title="About">About</a>
+    <a href="#" class="footer-block-item" title="Contact us">Contact us</a>
+  </div>
+  <div id="copyright">&copy; 2009-2010 <a id="link-lemonchik" href="#" title="Lemonchik">Lemonchik</a>. All rights reserved.</div>
+  <a id="link-facebook" href="#" title="Join us on Facebook"><img src="/img/facebook.gif"/><span>Join us on Facebook</span></a>
+</div>
