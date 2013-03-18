@@ -5,20 +5,24 @@ $default-font: "Trebuchet MS", Helvetica, sans-serif
 $content-width: 950px
 
 #wrap
-  clear: both
   background: rgba( 239, 239, 239, 0.5 )
   border-top: 1px solid rgba( 38, 38, 38, 0.1 )
+  clear: both
   border-bottom: 1px solid rgba( 38, 38, 38, 0.1 )
 
 #header
   +clearfix
   width: $content-width
+  height: 108px
   margin: 0 auto
-  padding: 10px 0 0
+  position: relative
 
 #logo-wrap
-  +float-left
   +clearfix
+  +float-left
+  position: absolute
+  top: 10px
+  left: 0px
 
 #logo
   +hide-text
@@ -29,21 +33,27 @@ $content-width: 950px
 
 #login-hint
   +float-right
-  color: #262626
-  opacity: 0.8
   font-family: $default-font
   font-size: 12px
-  padding: 50px 0 0
+  color: #262626
+  opacity: 0.8
+  position: absolute
+  top: 60px
+  right: 0
 
 #link-create-account
   color: #46a6d4
   opacity: 0.7
   text-decoration: none
+  &:hover, &:active
+    text-decoration: underline
 
 #link-login
   color: #46a6d4
   opacity: 0.7
   text-decoration: none
+  &:hover, &:active
+    text-decoration: underline
 
 #content
   clear: both
@@ -58,52 +68,68 @@ $content-width: 950px
   width: 159px
 
 #welcome-messages
+  height: 210px
   padding: 40px 0 20px
+  position: relative
 
 #welcome-title
   font-family: Arial
   font-size: 58px
 
 #welcome-subtitle
+  font-size: 32px
   color: #262626
   opacity: 0.8
-  font-size: 32px
   padding: 10px 0
 
 #intro
-  color: gray
   font-size: 21px
+  color: gray
   padding: 10px 0
 
 #link-start
   color: #3085cc
   text-decoration: none
+  &:hover, &:active
+    text-decoration: underline
 
 #link-screencast
   color: #3085cc
   text-decoration: none
+  &:hover, &:active
+    text-decoration: underline
 
 #button-dismiss-welcome-message
-  +float-right
-  color: #262626
-  opacity: 0.6
   font-family: $default-font
   font-size: 12px
+  color: #262626
+  opacity: 0.6
   text-decoration: none
+  display: block
+  padding: 1px 5px 5px
+  position: absolute
+  top: 220px
+  right: 0
+  &:hover, &:active
+    border: 1px solid #96a2b9
+    padding: 0 4px 4px
 
 .button-close
-  color: #262626
-  opacity: 0.3
   font-family: $default-font
   font-size: 20px
+  color: #262626
+  opacity: 0.3
   position: relative
   top: 2px
 
 #news-divider
   background: url( "/img/welcome-master.png" ) repeat
-  border: 0
   width: 100%
   height: 8px
+  border: 0
+  position: absolute
+  bottom: 0
+  left: 0
 
 #whats-new
   +clearfix
@@ -111,20 +137,27 @@ $content-width: 950px
 
 .list-title
   +clearfix
-  border-bottom: 1px solid rgba( 38, 38, 38, 0.1 )
   font-size: 16px
   font-weight: bold
   padding: 7px 0
+  border-bottom: 1px solid rgba( 38, 38, 38, 0.1 )
 
 .list-title h3
   +float-left
 
 .button-list-customize
+  +hide-text
   +float-right
   background: url( "/img/main-title-bg.png" ) no-repeat
+  background-position: center left 4px
   display: block
   width: 22px
   height: 16px
+  padding: 1px 4px
+  &:hover, &:active
+    background-position: center left 1px
+    border: 1px solid #96a2b9
+    padding: 0px 2px
 
 .list-item
   font-size: 12px
@@ -135,8 +168,14 @@ $content-width: 950px
   padding: 8px 0
   border-bottom: 1px solid rgba( 38, 38, 38, 0.1 )
 
+.link-list-item
+  color: #262626
+  text-decoration: none
+  &:hover, &:active
+    text-decoration: underline
+
 #headlines
-  +float
+  +float-left
   width: 300px
   padding: 0 25px 0 0
 
@@ -144,32 +183,42 @@ $content-width: 950px
   +float-left
 
 #popular
-  +float
+  +float-left
   padding: 0 25px 0 0
   width: 300px
 
 #latest-images
-  +float
+  +float-left
   width: 300px
 
 #latest-image-grid
   +clearfix
   padding: 3px 0 0
 
+.list-image-item
+  float: left
+  padding: 2px
+  &:hover, &:active
+    padding: 1px
+    border: 1px solid #96a2b9
+
+.list-image-link
+  display: block
+
 .list-image
   display: block
-  float: left
-  padding: 1px
 
 #footer
   +clearfix
   clear: both
   width: $content-width
+  height: 180px
   padding: 20px 0 20px
   margin: 0 auto
+  position: relative
 
 .footer-block
-  +float
+  +float-left
 
 #footer-sources-and-articles
   width: 310px
@@ -182,27 +231,32 @@ $content-width: 950px
   padding: 0 0 0 10px
 
 .footer-block-title
-  color: #262626
-  opacity: 0.9
   font-size: 14px
   font-weight: bold
+  color: #262626
+  opacity: 0.9
   padding: 15px 0
 
 .footer-block-item
+  padding: 3px 0
+
+.footer-block-item-link
+  font-size: 12px
   color: #262626
   opacity: 0.7
-  font-size: 12px
   text-decoration: none
-  display: block
-  padding: 3px 0
+  &:hover, &:active
+    text-decoration: underline
 
 #copyright
   +float-left
+  font-size: 12px
   color: #262626
   opacity: 0.7
-  font-size: 12px
   clear: both
-  padding: 30px 0 0
+  position: absolute
+  top: 180px
+  left: 0
 
 #link-lemonchik
   color: #262626
@@ -211,15 +265,18 @@ $content-width: 950px
 
 #link-facebook
   +float-right
+  background: url( "/img/facebook.gif" ) no-repeat
+  background-position: top left
+  font-size: 12px
   color: #26afe2
   opacity: 0.7
-  display: block
-  font-size: 12px
-  height: 15px
-  padding: 28px 0 0
   text-decoration: none
+  display: block
+  height: 15px
+  padding: 2px 0 0 20px
+  position: absolute
+  top: 182px
+  left: 810px
+  &:hover, &:active
+    text-decoration: underline
 
-#link-facebook > span
-  bottom: 3px
-  position: relative
-  padding: 0 0 0 3px
